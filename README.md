@@ -1,7 +1,5 @@
 # 🚀 End-to-End Sales Data Engineering Pipeline
 
-<div align="center">
-
 ![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-2.0-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![Apache Airflow](https://img.shields.io/badge/Apache%20Airflow-2.8.1-017CEE?style=for-the-badge&logo=apache-airflow&logoColor=white)
@@ -11,10 +9,7 @@
 ![Pytest](https://img.shields.io/badge/Pytest-10%20Tests-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 
-**A production-grade, end-to-end Data Engineering pipeline covering the full data lifecycle —
-from raw CSV ingestion to a cloud-integrated, orchestrated, and analytics-ready Data Warehouse.**
-
-</div>
+**A production-grade, end-to-end Data Engineering pipeline built with Python, Apache Airflow, Docker, and AWS S3. The pipeline covers the full data lifecycle from raw ingestion to an analytics-ready Data Warehouse.**
 
 ---
 
