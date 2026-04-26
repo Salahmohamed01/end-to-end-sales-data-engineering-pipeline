@@ -1,6 +1,6 @@
 # 🚀 End-to-End Sales Data Engineering Pipeline
 
-<p align="center">
+<div align="center">
 
 ![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-2.0-150458?style=for-the-badge&logo=pandas&logoColor=white)
@@ -11,7 +11,10 @@
 ![Pytest](https://img.shields.io/badge/Pytest-10%20Tests-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 
-</p>
+**A production-grade, end-to-end Data Engineering pipeline covering the full data lifecycle —
+from raw CSV ingestion to a cloud-integrated, orchestrated, and analytics-ready Data Warehouse.**
+
+</div>
 
 ---
 
@@ -409,20 +412,32 @@ pytest tests/test_pipeline.py -v
 
 ## 📈 Analytics Outputs
 
+The pipeline generates 5 analytical charts covering key business insights:
+
 ### Total Sales per Year
-![Sales per Year](docs/sales_per_year.png)
+<p align="center">
+  <img src="docs/sales_per_year.png" alt="Sales per Year" width="800"/>
+</p>
 
 ### Total Sales per Month
-![Sales per Month](docs/sales_per_month.png)
+<p align="center">
+  <img src="docs/sales_per_month.png" alt="Sales per Month" width="800"/>
+</p>
 
 ### Top 10 Products by Sales
-![Top 10 Products](docs/top_10_products.png)
+<p align="center">
+  <img src="docs/top_10_products.png" alt="Top 10 Products" width="800"/>
+</p>
 
 ### Top 10 Customers by Revenue
-![Top 10 Customers](docs/top_10_customers.png)
+<p align="center">
+  <img src="docs/top_10_customers.png" alt="Top 10 Customers" width="800"/>
+</p>
 
 ### Sales per Category
-![Sales per Category](docs/sales_per_category.png)
+<p align="center">
+  <img src="docs/sales_per_category.png" alt="Sales per Category" width="800"/>
+</p>
 
 ---
 
