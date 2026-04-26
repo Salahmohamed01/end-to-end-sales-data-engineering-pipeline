@@ -129,67 +129,57 @@ This project simulates a **real-world retail sales data platform** built with in
 
 ## 📁 Project Structure
 
+```
 End-to-End Sales Data Engineering Pipeline/
-│
 ├── .github/
 │   └── workflows/
-│       └── ci.yml                  # GitHub Actions CI/CD
-│
+│       └── ci.yml
 ├── app/
 │   ├── analytics/
-│   │   └── analysis.py             # SQL analysis & matplotlib charts
+│   │   └── analysis.py
 │   ├── cloud/
-│   │   └── s3_handler.py           # AWS S3 upload/download
+│   │   └── s3_handler.py
 │   ├── config/
-│   │   └── config_loader.py        # Centralized config management
+│   │   └── config_loader.py
 │   ├── database/
-│   │   ├── db_loader.py            # Dimension table loader
-│   │   └── db_optimizer.py         # Indexes & SQL views
+│   │   ├── db_loader.py
+│   │   └── db_optimizer.py
 │   ├── ingestion/
-│   │   └── ingest_data.py          # Multi-table CSV ingestion
+│   │   └── ingest_data.py
 │   ├── loading/
-│   │   └── incremental_loader.py   # Watermark-based incremental load
+│   │   └── incremental_loader.py
 │   ├── transformation/
-│   │   └── data_cleaning.py        # Cleaning & transformation logic
+│   │   └── data_cleaning.py
 │   ├── utils/
-│   │   └── logger.py               # Pipeline logging setup
+│   │   └── logger.py
 │   ├── validation/
-│   │   └── data_validation.py      # Data quality checks
+│   │   └── data_validation.py
 │   └── warehouse/
-│       └── data_modeling.py        # Star schema builder
-│
+│       └── data_modeling.py
 ├── airflow/
 │   └── dags/
-│       └── sales_pipeline_dag.py   # Airflow DAG definition
-│
+│       └── sales_pipeline_dag.py
 ├── data/
-│   ├── raw/                        # Source CSV files
-│   ├── processed/                  # Cleaned intermediate data
-│   └── invalid/                    # Failed validation records
-│
+│   ├── raw/
+│   ├── processed/
+│   └── invalid/
 ├── sql/
 │   ├── analytics/
-│   │   └── analytical_queries.sql  # Business insight queries
+│   │   └── analytical_queries.sql
 │   └── warehouse/
-│       └── optimize.sql            # Index & view definitions
-│
+│       └── optimize.sql
 ├── tests/
-│   └── test_pipeline.py            # 10 unit tests
-│
+│   └── test_pipeline.py
 ├── logs/
-│   └── pipeline.log                # Runtime logs
-│
-├── docs/                           # Documentation assets
-│
+├── docs/
 ├── .gitignore
-├── config.yaml.example             # Config template
-├── Dockerfile                      # Pipeline container
-├── docker-compose.yml              # Airflow + pipeline services
+├── config.yaml.example
+├── Dockerfile
+├── docker-compose.yml
 ├── requirements.txt
-├── README.md
-└── main.py                         # Pipeline entry point
-
----
+├── main.py
+└── README.md
+```
 
 ## 🔄 Pipeline Phases
 
@@ -418,21 +408,20 @@ pytest tests/test_pipeline.py -v
 
 ## 📈 Analytics Outputs
 
-The pipeline generates 5 charts and prints business insights to the console:
+### Total Sales per Year
+![Sales per Year](docs/sales_per_year.png)
 
-| Analysis | Insight |
-|----------|---------|
-| **Sales per Year** | Revenue trend from 2020 to 2024 |
-| **Sales per Month** | Seasonal patterns across all years |
-| **Top 10 Products** | Highest revenue-generating products |
-| **Top 10 Customers** | Most valuable customer segments |
-| **Sales per Category** | Revenue breakdown across 30 categories |
+### Total Sales per Month
+![Sales per Month](docs/sales_per_month.png)
 
-**Sample Results:**
-- Total Revenue (2020-2024): ~**3.83 Billion**
-- Top Customer Revenue: **316,629**
-- Best Month: **December** (329M)
-- Top Category: **Category 5** (136M)
+### Top 10 Products by Sales
+![Top 10 Products](docs/top_10_products.png)
+
+### Top 10 Customers by Revenue
+![Top 10 Customers](docs/top_10_customers.png)
+
+### Sales per Category
+![Sales per Category](docs/sales_per_category.png)
 
 ---
 

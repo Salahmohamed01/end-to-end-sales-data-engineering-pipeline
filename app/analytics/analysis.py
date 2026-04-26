@@ -26,7 +26,7 @@ def run_analysis():
     print(sales_per_year, "\n")
 
     plt.figure(figsize=(10, 6))
-    plt.bar(sales_per_year["year"].astype(str), sales_per_year["total_sales"])
+    plt.bar(sales_per_year["year"].astype(str), sales_per_year["total_sales"], color='#2196F3' )
     plt.title("Total Sales per Year", fontsize=14)
     plt.xlabel("Year")
     plt.ylabel("Total Sales")
@@ -47,7 +47,7 @@ def run_analysis():
     print(sales_per_month, "\n")
 
     plt.figure(figsize=(10, 6))
-    plt.plot(sales_per_month["month"], sales_per_month["total_sales"], marker='o')
+    plt.plot(sales_per_month["month"], sales_per_month["total_sales"], color='#4CAF50', marker='o')
     plt.title("Total Sales per Month", fontsize=14)
     plt.xlabel("Month")
     plt.ylabel("Total Sales")
@@ -68,7 +68,7 @@ def run_analysis():
     print(top_products, "\n")
 
     plt.figure(figsize=(10, 6))
-    plt.bar(top_products["product_id"].astype(str), top_products["total_sales"])
+    plt.bar(top_products["product_id"].astype(str), top_products["total_sales"], color='#FF9800')
     plt.title("Top 10 Products by Sales", fontsize=14)
     plt.xlabel("Product ID")
     plt.ylabel("Total Sales")
@@ -90,7 +90,7 @@ def run_analysis():
     print(top_customers, "\n")
 
     plt.figure(figsize=(10, 6))
-    plt.bar(top_customers["customer_id"].astype(str), top_customers["total_sales"])
+    plt.bar(top_customers["customer_id"].astype(str), top_customers["total_sales"], color='#9C27B0')
     plt.title("Top 10 Customers", fontsize=14)
     plt.xlabel("Customer ID")
     plt.ylabel("Total Sales")
@@ -112,7 +112,7 @@ def run_analysis():
     print(sales_per_category, "\n")
 
     plt.figure(figsize=(10, 6))
-    plt.bar(sales_per_category["category_id"].astype(str), sales_per_category["total_sales"])
+    plt.bar(sales_per_category["category_id"].astype(str), sales_per_category["total_sales"], color='#00BCD4')
     plt.title("Sales per Category", fontsize=14)
     plt.xlabel("Category ID")
     plt.ylabel("Total Sales")
