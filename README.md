@@ -1,5 +1,7 @@
 # 🚀 End-to-End Sales Data Engineering Pipeline
 
+<p align="center">
+
 ![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-2.0-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![Apache Airflow](https://img.shields.io/badge/Apache%20Airflow-2.8.1-017CEE?style=for-the-badge&logo=apache-airflow&logoColor=white)
@@ -9,7 +11,7 @@
 ![Pytest](https://img.shields.io/badge/Pytest-10%20Tests-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 
-**A production-grade, end-to-end Data Engineering pipeline built with Python, Apache Airflow, Docker, and AWS S3. The pipeline covers the full data lifecycle from raw ingestion to an analytics-ready Data Warehouse.**
+</p>
 
 ---
 
@@ -51,7 +53,6 @@ This project simulates a **real-world retail sales data platform** built with in
 
 ## 🏗️ Architecture
 
-<div align="center">
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -104,7 +105,6 @@ This project simulates a **real-world retail sales data platform** built with in
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-</div>
 
 ---
 
@@ -204,7 +204,6 @@ End-to-End Sales Data Engineering Pipeline/
 
 ## 📊 Data Model (Star Schema)
 
-<div align="center">
 
 ```
                          ┌─────────────────┐
@@ -236,7 +235,6 @@ End-to-End Sales Data Engineering Pipeline/
                          └─────────────────┘
 ```
 
-</div>
 
 ---
 
