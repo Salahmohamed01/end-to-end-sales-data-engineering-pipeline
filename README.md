@@ -414,29 +414,29 @@ pytest tests/test_pipeline.py -v
 
 The pipeline generates 5 analytical charts covering key business insights:
 
-### Total Sales per Year
+### 📊 Bar Chart — Total Sales per Year
 <p align="center">
-  <img src="docs/sales_per_year.png" alt="Sales per Year" width="800"/>
+  <img src="docs/Figures/sales_per_year.png" alt="Sales per Year" width="800"/>
 </p>
 
-### Total Sales per Month
+### 📈 Line Chart — Total Sales per Month
 <p align="center">
-  <img src="docs/sales_per_month.png" alt="Sales per Month" width="800"/>
+  <img src="docs/Figures/sales_per_month.png" alt="Sales per Month" width="800"/>
 </p>
 
-### Top 10 Products by Sales
+### 📊 Bar Chart — Top 10 Products by Sales
 <p align="center">
-  <img src="docs/top_10_products.png" alt="Top 10 Products" width="800"/>
+  <img src="docs/Figures/top_10_products.png" alt="Top 10 Products" width="800"/>
 </p>
 
-### Top 10 Customers by Revenue
+### 📊 Bar Chart — Top 10 Customers by Revenue
 <p align="center">
-  <img src="docs/top_10_customers.png" alt="Top 10 Customers" width="800"/>
+  <img src="docs/Figures/top_10_customers.png" alt="Top 10 Customers" width="800"/>
 </p>
 
-### Sales per Category
+### 📊 Bar Chart — Sales per Category
 <p align="center">
-  <img src="docs/sales_per_category.png" alt="Sales per Category" width="800"/>
+  <img src="docs/Figures/sales_per_category.png" alt="Sales per Category" width="800"/>
 </p>
 
 ---
@@ -445,12 +445,14 @@ The pipeline generates 5 analytical charts covering key business insights:
 
 Raw data files are automatically uploaded to AWS S3 after each pipeline run:
 
+```
 s3://YOUR_BUCKET_NAME/
 └── raw/
-├── customers.csv       (1.2 MB)
-├── orders.csv          (8.7 MB)
-├── order_items.csv     (15.1 MB)
-└── products.csv        (158 KB)
+    ├── customers.csv        (1.2 MB)
+    ├── orders.csv           (8.7 MB)
+    ├── order_items.csv      (15.1 MB)
+    └── products.csv         (158 KB)
+```
 
 ---
 
