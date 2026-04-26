@@ -1,0 +1,39 @@
+services:
+  airflow-init:
+    image: apache/airflow:2.8.1
+    container_name: airflow_init
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=SequentialExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=sqlite:////opt/airflow/airflow.db
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+    volumes:
+      - airflow-db:/opt/airflow
+      - ./airflow/dags:/opt/airflow/dags
+      - ./data:/opt/airflow/data
+      - ./app:/opt/airflow/app
+      - ./config.yaml:/opt/airflow/config.yaml
+    command: >
+      bash -c "airflow db migrate &&
+               airflow users create --username admin --password admin --firstname Admin --lastname User --role Admin --email admin@example.com"
+
+  airflow:
+    image: apache/airflow:2.8.1
+    container_name: airflow
+    restart: on-failure
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=SequentialExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=sqlite:////opt/airflow/airflow.db
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+    volumes:
+      - airflow-db:/opt/airflow
+      - ./airflow/dags:/opt/airflow/dags
+      - ./data:/opt/airflow/data
+      - ./app:/opt/airflow/app
+      - ./config.yaml:/opt/airflow/config.yaml
+    ports:
+      - "8080:8080"
+    command: >
+      bash -c "sleep 30 && airflow webserver & sleep 30 && airflow scheduler"
+
+volumes:
+  airflow-db:

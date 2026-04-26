@@ -1,0 +1,27 @@
+# Environment
+.venv/
+*.env
+
+# Database
+*.db
+
+# Logs
+logs/
+
+# Cache
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Sensitive config
+config.yaml
+
+# Docker
+.docker/
+
+# Data (too large for GitHub)
+data/raw/
+data/processed/
+data/invalid/
+data/archive/
