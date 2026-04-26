@@ -51,6 +51,8 @@ This project simulates a **real-world retail sales data platform** built with in
 
 ## 🏗️ Architecture
 
+<div align="center">
+
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                        DATA SOURCES                             │
@@ -101,6 +103,8 @@ This project simulates a **real-world retail sales data platform** built with in
 │      Schedule: @daily · 4 tasks · SequentialExecutor            │
 └─────────────────────────────────────────────────────────────────┘
 ```
+
+</div>
 
 ---
 
@@ -200,6 +204,8 @@ End-to-End Sales Data Engineering Pipeline/
 
 ## 📊 Data Model (Star Schema)
 
+<div align="center">
+
 ```
                          ┌─────────────────┐
                          │  dim_customers  │
@@ -229,6 +235,8 @@ End-to-End Sales Data Engineering Pipeline/
                          │ total_amount    │
                          └─────────────────┘
 ```
+
+</div>
 
 ---
 
